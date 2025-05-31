@@ -2,7 +2,7 @@
 
 Shell script for mass downloading CurseForge mods from a manifest file.
 
-![demo](https://fur1.furweb.com/consumer/5N9klqspbm.gif)
+![demo](https://fur1.foxomy.com/consumer/5N9klqspbm.gif)
 
 ## Designed with no dependencies in mind
 
