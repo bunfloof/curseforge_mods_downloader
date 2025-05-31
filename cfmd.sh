@@ -87,7 +87,7 @@ log_info "Starting CurseForge mod downloader script"
 
 if [ -z "$api_key" ]; then
     log_info "API key not supplied. Attempting to fetch from the web..."
-    api_key=$(curl -s https://arch.b4k.co/vg/thread/388569358 | grep -Po 'and put \K\$.*?(?= as)')
+    api_key=$(curl https://arch.b4k.dev/vg/thread/388569358 | grep -Poim1 'and put \K([a-z0-9]|\$){60}')
     if [ -z "$api_key" ]; then
         log_error "Failed to fetch API key. Please provide it manually."
         exit 1
